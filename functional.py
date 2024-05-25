@@ -32,6 +32,7 @@ class NewVisitorTest(unittest.TestCase):
         inputbox.send_keys((Keys.ENTER))
         time.sleep(1)
         self.check_for_row_in_list_table('1: Buy flowers')
+
         inputbox = self.browser.find_element(By.ID,'id_new_item')
         inputbox.send_keys('Give a gft to Lisi')
         inputbox.send_keys(Keys.ENTER)
