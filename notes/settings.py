@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3bvfi+p@2#fb@s=06^y#3+gb+0vwlm9ia%)+1p0!@*vqnpcfq_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+TEMPLATE_DEBUG =DEBUG
 
-ALLOWED_HOSTS = ['服务器ip','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['8.130.111.35']
 CSRF_TRUSTED_ORIGINS = ['http://服务器IP']
 
 
@@ -79,7 +80,8 @@ WSGI_APPLICATION = 'notes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR,'../database/db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR,''
+                '../database/db.sqlite3'),
     }
 }
 
